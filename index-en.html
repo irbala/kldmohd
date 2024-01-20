@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Life Coaching</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">العربية</a></li>
+            <li><a href="index-en.html">English</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Welcome to Your Life Coaching</h1>
+        <p>Your partner in personal growth and success</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index-en.html">Home</a></li>
+            <li><a href="book-en.html">Book a Session</a></li>
+            <li><a href="contact-en.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Home Page</h2>
+        <p>Introduce yourself and your coaching philosophy. Highlight key services and benefits.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Share your background, qualifications, and personal story.</p>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <p>Describe your coaching services in detail.</p>
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <p>Include testimonials from satisfied clients (with their permission).</p>
+    </section>
+
+    <section id="blog">
+        <h2>Blog/Articles</h2>
+        <p>Share insights, tips, and relevant articles to showcase your expertise.</p>
+    </section>
+
+
+
+
+    <section id="client-portal">
+        <h2>Client Portal</h2>
+        <p>Access the secure client portal for confidential communication and progress tracking.</p>
+        <button onclick="openClientPortal()">Access Portal</button>
+    </section>
+
+    <section id="faq">
+        <h2>FAQ</h2>
+        <p>Anticipate and address common questions in our Frequently Asked Questions section.</p>
+        <!-- Include FAQ content here -->
+    </section>
+
+ <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Use the form below to get in touch:</p>
+
+    <form action="process_contact_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <!-- CSRF token -->
+        <?php $csrfToken = bin2hex(random_bytes(32)); ?>
+        <input type="hidden" name="csrf_token" value="<?php echo $csrfToken; ?>">
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+
+    <section id="social-media">
+        <h2>Connect on Social Media</h2>
+        <p>Follow us on social media for updates and inspiration.</p>
+        <!-- Include social media feeds or icons here -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Life Coaching</p>
+    </footer>
+
+</body>
+</html>

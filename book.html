@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>تدريب حياتك</title>
+</head>
+<body>
+
+    <header>
+        <h1>مرحبًا بك في تدريب حياتك</h1>
+        <p>شريكك في النمو الشخصي والنجاح</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="book.html">احجز جلسة</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+    </nav>
+
+  
+        <section id="contact">
+            <h2>Book a Session - احجز جلسة</h2>
+            <p>Use our online booking system to schedule a coaching session.</p>
+            <p>استخدم النموذج أدناه لتحديد موعد لجلسة تدريب:</p>
+
+            <form action="process_contact_form.php" method="POST">
+                <label for="name">Name - الأسم:</label>
+                <input type="text" id="name" name="name" required>
+            
+                <label for="phone">Phone Number - رقم الهاتف:</label>
+                <div class="phone-input">
+                    <select id="country" name="country" required>
+                        <option value="ae">United Arab Emirates (+971)</option>
+                        <option value="sa">Saudi Arabia (+966)</option>
+                        <option value="qa">Qatar (+974)</option>
+                        <option value="kw">Kuwait (+965)</option>
+                        <option value="bh">Bahrain (+973)</option>
+                        <option value="om">Oman (+968)</option>
+                        <option value="jo">Jordan (+962)</option>
+                        <option value="lb">Lebanon (+961)</option>
+                        <option value="iq">Iraq (+964)</option>
+                        <option value="sy">Syria (+963)</option>
+                        <option value="ye">Yemen (+967)</option>
+                        <option value="ps">Palestine (+970)</option>
+                        <!-- Add more Middle Eastern countries as needed -->
+                    </select>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            
+                <label for="message">Message - الرسالة:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            
+                <!-- CSRF token -->
+                <?php $csrfToken = bin2hex(random_bytes(32)); ?>
+                <input type="hidden" name="csrf_token" value="<?php echo $csrfToken; ?>">
+            
+                <!-- Booking date and time -->
+                <label for="bookingDate">Booking Date - تاريخ الحجز:</label>
+                <input type="date" id="bookingDate" name="bookingDate" required>
+            
+                <label for="bookingTime">Booking Time - وقت الحجز:</label>
+                <select id="bookingTime" name="bookingTime" required>
+                    <option value="9:00">9:00 AM - 10:00 AM</option>
+                    <option value="11:00">11:00 AM - 12:00 PM</option>
+                    <option value="13:00">1:00 PM - 2:00 PM</option>
+                </select>
+            
+                <button type="submit">Send - إرسال</button>
+            </form>
+            
+            
+            
+            
+        </section>
+        
+    <footer>
+        <p>&copy; 2024 تدريب حياتك</p>
+    </footer>
+
+
+</body>
+</html>
