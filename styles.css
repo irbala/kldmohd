@@ -100,17 +100,24 @@ section {
     background-color: #2e87c2;
 }
 
+#profile {
+
+    width: 200px;
+    border-radius: 100%;
+  }
 
 img {
 width: 35px;
 
 }
 
+
 img, #socials {
 
     width: 50px;
     margin: 5px;
   }
+
 
 
 footer {
