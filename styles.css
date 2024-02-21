@@ -32,29 +32,35 @@ header {
     background-color: #444444; /* Dark blue header background color */
     color: #fff;
     padding: 20px;
+    
 }
 
 header h1 {
     margin: 0;
     font-size: 24px;
+    
 }
 
 /* Navigation Styles */
 nav {
     background-color: #696969; /* Dark blue nav background color */
     color: #fff;
-    padding: 10px;
+    padding-top: 10px;
+    
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    
 }
 
 nav ul li {
     display: inline-block;
-    margin-right: 20px;
+    border-bottom: 0.5px solid rgb(92, 92, 92);
+    width: 100%;
+
 }
 
 nav a {
@@ -139,6 +145,14 @@ img, #socials {
     margin: 5px;
 }
 
+/* Footer Styles */
+#footer {
+    background-color: #444444; /* Dark blue footer background color */
+    color: #fff;
+    width: 100%;
+    padding: 1px;
+    margin: 0;
+}
 
 /* Media Queries */
 @media only screen and (max-width: 600px) {
