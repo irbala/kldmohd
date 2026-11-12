@@ -1,28 +1,25 @@
-Khalid Alabri - Personal Portfolio Website
+# Khalid Alabri — Coaching Website
 
-Click here to visit the website: https://irbala.github.io/kldmohd/
+**Live site:** https://irbala.github.io/kldmohd/
 
-Description:
+A small Arabic (right-to-left) website for Khalid Alabri, a certified trainer in social development and self-improvement. Visitors can read about him, see photos from his talks and events, send a message, and go to his Salla store to book sessions.
 
-This is a professional and modern personal website developed for Khalid Alabri , a consultant dedicated to helping his clients achieve their goals through personalized guidance and support. 
-The website serves as a digital hub for his consultancy business, enabling his clients to learn more about his services, connect with him easily, and book appointments online.
+## Pages
 
-Built using HTML , CSS , and JavaScript , this project highlights my ability to create clean, functional, and client-focused web solutions. 
-The design emphasizes simplicity, professionalism, and usability, ensuring a seamless experience for visitors.
+| Page | What's on it |
+|---|---|
+| `index.html` | Introduction, a link to book through Salla, photos and social media links |
+| `Contact.html` | A contact form (embedded Google Form) |
+| `album.html` | Photo album of talks, events and certificates |
 
-Through this project, I demonstrate expertise in:
+## How it's built
 
-- Crafting user-friendly interfaces tailored to client needs
-- Implementing responsive designs for optimal performance across devices
-- Enhancing accessibility and engagement for end-users
+Hand-written HTML and CSS, with no page builder, frameworks or JavaScript.
 
-Key Features:
+- `styles.css` holds the styles for all three pages. Colours are set once as variables at the top.
+- The layout is responsive: three photo columns on desktop, two on phones.
+- Semantic structure (`header`, `nav`, `main`, `footer`), alt text on every photo, and `lang="ar" dir="rtl"` on every page.
 
-- Professional and visually appealing design
-- Easy navigation to explore services and contact information
-- Online booking functionality for client convenience
-- Fully responsive layout for desktops, tablets, and mobile devices
+## Run it locally
 
-Feel free to explore the code or suggest improvements—I’m always open to feedback!
-
-Tech Stack: HTML, CSS, Google form
+Download or clone the repo and open `index.html` in a browser.
